@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <meta charset="UTF-8">
+        <script src="calcFunc.js"></script>
+        <title>Web Calculator</title>
+    </head>
+    <body>
+        <div class="grid">
+            <div class="grid-container">
+                <div class="grid-item"><button class="grid-button" onclick="appendToText('1')">1</button></div>
+                <div class="grid-item"><button class="grid-button" onclick="appendToText('2')">2</button></div>
+                <div class="grid-item"><button class="grid-button" onclick="appendToText('3')">3</button></div>
+                <div class="grid-item"><button class="grid-button" onclick="appendToText('4')">4</button></div>
+                <div class="grid-item"><button class="grid-button" onclick="appendToText('5')">5</button></div>
+                <div class="grid-item"><button class="grid-button" onclick="appendToText('6')">6</button></div>
+                <div class="grid-item"><button class="grid-button" onclick="appendToText('7')">7</button></div>
+                <div class="grid-item"><button class="grid-button" onclick="appendToText('8')">8</button></div>
+                <div class="grid-item"><button class="grid-button" onclick="appendToText('9')">9</button></div>
+                <div class="grid-item"><button class="grid-button" onclick="appendToText('+')">+</button></div>
+                <div class="grid-item"><button class="grid-button" onclick="appendToText('0')">0</button></div>
+                <div class="grid-item"><button class="grid-button" onclick="appendToText('-')">-</button></div>
+                <div class="grid-item"><button class="grid-button" onclick="appendToText('/')">/</button></div>
+                <div class="grid-item"><button class="grid-button" onclick="appendToText('*')">x</button></div>
+                <div class="grid-item"><button class="grid-button" onclick="appendToText('**')">^</button></div>
+                <div class="grid-item"><button class="grid-button" onclick="clearText()">CLR</button></div>
+                <div class="grid-item"><button class="grid-button" onclick="evaluateExpression()">=</button></div>
+                <div class="grid-item"><button class="grid-button" onclick="removeLast()">⌫</button></div>
+            </div>
+        </div>
+            <div class="expression">
+                <input type="text" id="current-expression" data-state="incomplete">
+            </div> 
+    </body>
+</html>
